@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5, user-scalable=no">
+    <link rel="shortcut icon" href="favicon.png">
+    <title>Pang DS</title>
+    <style media="screen">
+      #single, img { display: none; }
+      canvas { background-color: #F0F; }
+      canvas { transform: translate3d(0, 0, 0); -webkit-transform: translate3d(0, 0, 0); transform: translateZ(0); -webkit-transform: translateZ(0); }
+      form select, button { font-size: 1.2rem; background-color: #FFF; border: 1px solid #333; outline: none; }
+      form button { padding: 0.1rem 1.65rem; margin: 0 1rem; color: #333; border-radius: 6px; }
+      form button:disabled { border: 1px solid #BBB; background-color: #EEE; color: #BBB; }
+    </style>
+  </head>
+  <body>
+    <center>
+      <img src="tiles.png" alt="">
+      <canvas id="screen" width="256" height="384"></canvas>
+      <canvas id="single" width="8" height="8"></canvas>
+      <form>
+        <p>
+          <button type="button" name="prev" id="prev" accesskey=",">&larr;</button>
+          <select name="stage" id="selector"></select>
+          <button type="button" name="next" id="next" accesskey=".">&rarr;</button>
+        </p>
+        <p>
+          <!-- <button type="button" name="save" id="save">Save PNG</button> -->
+        </p>
+      </form>
+    </center>
+    <!-- <script src="js/jquery-3.2.1.slim.min.js"></script> -->
+    <!-- <script src="js/jquery-2.2.4.min.js"></script> -->
+    <!-- <script src="js/jquery-1.12.4.min.js"></script> -->
+    <script src="js/zepto.min.js"></script>
+    <script src="js/stages.js"></script>
+    <!-- <script src="js/Blob.js"></script>
+    <script src="js/canvas-toBlob.js"></script>
+    <script src="js/FileSaver.min.js"></script> -->
+    <script async="" src="js/draw.js" defer></script>
+  </body>
+</html>

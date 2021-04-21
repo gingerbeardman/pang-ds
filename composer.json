@@ -1,0 +1,5 @@
+{
+    "require": {
+        "mdurrant/php-binary-reader": "1.*"
+    }
+}
