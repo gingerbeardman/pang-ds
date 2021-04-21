@@ -9,6 +9,14 @@
       #single, img { display: none; }
       canvas { background-color: #F0F; }
       canvas { transform: translate3d(0, 0, 0); -webkit-transform: translate3d(0, 0, 0); transform: translateZ(0); -webkit-transform: translateZ(0); }
+      canvas {
+        image-rendering: optimizeSpeed;             /* Older versions of FF          */
+        image-rendering: -moz-crisp-edges;          /* FF 6.0+                       */
+        image-rendering: -webkit-optimize-contrast; /* Safari                        */
+        image-rendering: -o-crisp-edges;            /* OS X & Windows Opera (12.02+) */
+        image-rendering: pixelated;                 /* Awesome future-browsers       */
+        -ms-interpolation-mode: nearest-neighbor;   /* IE                            */
+      }
       form select, button { font-size: 1.2rem; background-color: #FFF; border: 1px solid #333; outline: none; }
       form button { padding: 0.1rem 1.65rem; margin: 0 1rem; color: #333; border-radius: 6px; }
       form button:disabled { border: 1px solid #BBB; background-color: #EEE; color: #BBB; }
